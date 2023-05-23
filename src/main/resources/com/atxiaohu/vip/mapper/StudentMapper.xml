@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atxiaohu.vip.mapper.StudentMapper">
+
+    <insert id="batchInsert" parameterType="arraylist">
+        INSERT INTO student(id,name,age,sex,habit,department_id,course_id) values
+            <foreach collection="list" item="data" separator=",">
+                (
+                 #{data.id},
+                 #{data.name},
+                 #{data.age},
+                 #{data.sex},
+                 #{data.habit},
+                 #{data.department_id},
+                 #{data.course_id}
+                )
+            </foreach>
+    </insert>
+    <select id="findAll" resultType="com.atxiaohu.vip.pojo.Student">
+        SELECT * from student;
+    </select>
+</mapper>

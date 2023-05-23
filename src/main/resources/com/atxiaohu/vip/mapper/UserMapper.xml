@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atxiaohu.vip.mapper.UserMapper">
+
+    <resultMap id="User" type="com.atxiaohu.vip.pojo.User">
+        <id column="id" property="id" javaType="BigInteger"/>
+        <result column="name" property="name" javaType="String"/>
+        <result column="password" property="password" javaType="String"/>
+        <result column="status" property="status" javaType="Integer"/>
+    </resultMap>
+
+    <insert id="insertUser" parameterType="com.atxiaohu.vip.pojo.User" >
+        insert into USER value (#{id},#{name},#{password},#{status})
+    </insert>
+    <select id="selectUsers" resultType="com.atxiaohu.vip.pojo.User">
+        select id,name,password,status from User
+    </select>
+    <update id="update" parameterType="com.atxiaohu.vip.pojo.User">
+     update  User set  name=#{name},password=#{password},status=#{status} where id=#{id]
+
+    </update>
+    <update id="updateUser" parameterType="com.atxiaohu.vip.pojo.User">
+        update User set  name=#{name},password=#{password},status=#{status}
+        where id=#{id}
+    </update>
+
+</mapper>
