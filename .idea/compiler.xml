@@ -7,16 +7,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="test" />
+        <module name="ExcelPDFWord" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="test" target="17" />
+      <module name="ExcelPDFWord" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="test" options="-parameters" />
+      <module name="ExcelPDFWord" options="-parameters" />
     </option>
   </component>
 </project>

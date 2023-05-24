@@ -4,7 +4,6 @@ import com.atxiaohu.vip.mapper.StudentMapper;
 import com.atxiaohu.vip.pojo.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.crypto.spec.OAEPParameterSpec;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;

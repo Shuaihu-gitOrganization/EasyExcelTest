@@ -2,11 +2,8 @@ package com.atxiaohu.vip.service;
 
 import com.atxiaohu.vip.mapper.UserMapper;
 import com.atxiaohu.vip.pojo.User;
-import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.math.BigInteger;
 import java.util.List;
 
 /**

@@ -1,7 +1,5 @@
 package com.atxiaohu.vip.constant;
 
-import java.io.File;
-
 /**
  * @Date 2023/5/24
  * @Author XiaoHu

@@ -1,9 +1,7 @@
 package com.atxiaohu.vip.pojo;
 
 import lombok.*;
-
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.math.BigInteger;
 
