@@ -99,7 +99,7 @@ public class AsposeUtil {
             File file = new File(pdf.replace(".pdf","")+System.currentTimeMillis()+".pdf");
             fileOutputStream=  new FileOutputStream(file);
             PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
-            pdfSaveOptions.setOnePagePerSheet(false);
+            pdfSaveOptions.setOnePagePerSheet(true);
 
             //当excel中对应的sheet也宽度太大时，在PDF会拆断并分页，此处等比缩放
             int [] autoDrawSheets={3};
@@ -108,7 +108,7 @@ public class AsposeUtil {
             int showSheets []={0};
 
             printSheetPage(workbook,showSheets);
-            workbook.save(fileOutputStream, SaveFormat.PDF);
+            workbook.save(fileOutputStream, pdfSaveOptions);
             fileOutputStream.flush();
             long end=System.currentTimeMillis();
             System.out.println("excel转pdf耗时：" +(end - start)/1000+"s");
