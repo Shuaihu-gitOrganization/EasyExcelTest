@@ -153,5 +153,21 @@
     <orderEntry type="library" name="Maven: org.jogamp.gluegen:gluegen-rt:natives-windows-i586:2.3.2" level="project" />
     <orderEntry type="library" name="Maven: com.luhuiguo:aspose-cells:22.10" level="project" />
     <orderEntry type="library" name="Maven: com.luhuiguo:aspose-pdf:23.1" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:itext7-core:7.2.3" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:barcodes:7.2.3" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:font-asian:7.2.3" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:forms:7.2.3" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:hyph:7.2.3" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:io:7.2.3" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:commons:7.2.3" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:kernel:7.2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.70" level="project" />
+    <orderEntry type="library" name="Maven: org.bouncycastle:bcutil-jdk15on:1.70" level="project" />
+    <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk15on:1.70" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:layout:7.2.3" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:pdfa:7.2.3" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:sign:7.2.3" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:styled-xml-parser:7.2.3" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:svg:7.2.3" level="project" />
   </component>
 </module>
