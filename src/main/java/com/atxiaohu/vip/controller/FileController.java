@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/file")
 public class FileController {
     private static final String WORD_PATH="D:/TempExcel/pdf/test.doc";
-    private static final String  EXCEL_PATH="D:/TempExcel/test.xlsx";
+    private static final String  EXCEL_PATH="D:/TempExcel/pdf/test.xlsx";
     private static final String  PDF_PATH="D:/TempExcel/pdf/test.pdf";
     @RequestMapping("/jacobword")
     public String jacobword2pdf(){
