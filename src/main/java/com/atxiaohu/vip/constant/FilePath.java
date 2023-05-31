@@ -5,18 +5,10 @@ package com.atxiaohu.vip.constant;
  * @Author XiaoHu
  * @Description
  **/
-public enum FilePath {
-    WORD_PATH("D:/TempExcel/pdf/test.doc"),
-    EXCEL_PATH("D:/TempExcel/pdf/test.xlsx"),
-    PDF_PATH("D:/TempExcel/pdf/test.pdf");
-    private String path;
+public class FilePath {
+    public static final String WORD_PATH="D:/TempExcel/pdf/test.doc";
+    public static final String EXCEL_PATH="D:/TempExcel/pdf/test.xlsx";
+    public static final String PDF_PATH="D:/TempExcel/pdf/test.pdf";
 
-    FilePath(String path) {
-        this.path=path;
-    }
-
-    public String getPath() {
-        return path;
-    }
 
 }
