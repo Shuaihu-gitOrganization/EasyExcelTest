@@ -46,7 +46,8 @@ public class FileController {
     @RequestMapping("/filepath")
     public String getfilePath(){
         
-    return "WordPath："+FilePath.WORD_PATH+"ExcelPath："+FilePath.EXCEL_PATH
-    +"PDFPath："+FilePath.PDF_PATH;
+    return "WordPath："+FilePath.WORD_PATH+"/ "
+    +"ExcelPath："+FilePath.EXCEL_PATH+"/ "
+    +"PDFPath："+FilePath.PDF_PATH+"/ ";
     }
 }
