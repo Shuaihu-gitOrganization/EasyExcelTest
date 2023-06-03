@@ -1,5 +1,6 @@
 package com.atxiaohu.vip.controller;
 
+import com.atxiaohu.vip.constant.FilePath;
 import com.atxiaohu.vip.utils.AsposeUtil;
 import com.atxiaohu.vip.utils.JacobUtil;
 import org.springframework.stereotype.Controller;
@@ -38,8 +39,10 @@ public class FileController {
 
         return AsposeUtil.excel2Pdf(EXCEL_PATH,PDF_PATH);
     }
-    @RequestMapping("/test")
-    public String testString(){
-    return "The Status is Success";
+    @RequestMapping("/filepath")
+    public String getfilePath(){
+        
+    return "WordPath："+FilePath.WORD_PATH+"ExcelPath:"+FilePath.EXCEL_PATH
+    +"PDFPath:"+FilePath.PDF_PATH;
     }
 }
