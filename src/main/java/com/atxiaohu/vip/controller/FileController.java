@@ -39,10 +39,14 @@ public class FileController {
 
         return AsposeUtil.excel2Pdf(EXCEL_PATH,PDF_PATH);
     }
+    /**
+     * 增加固定文件路径输出接口
+     * @return 固定文件路径
+     */
     @RequestMapping("/filepath")
     public String getfilePath(){
         
-    return "WordPath："+FilePath.WORD_PATH+"ExcelPath:"+FilePath.EXCEL_PATH
-    +"PDFPath:"+FilePath.PDF_PATH;
+    return "WordPath："+FilePath.WORD_PATH+"ExcelPath："+FilePath.EXCEL_PATH
+    +"PDFPath："+FilePath.PDF_PATH;
     }
 }
