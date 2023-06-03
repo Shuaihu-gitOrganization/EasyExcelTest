@@ -38,4 +38,8 @@ public class FileController {
 
         return AsposeUtil.excel2Pdf(EXCEL_PATH,PDF_PATH);
     }
+    @RequestMapping("/test")
+    public String testString(){
+    return "The Status is Success";
+    }
 }
