@@ -80,5 +80,10 @@ public class StudentService {
         return handlerMessage;//返回的最终状态
     }
 
-
+    public List<Student> getAllStudentByProc(){
+        return studentMapper.getAllStudentByProc();
+    }
+    public Student getAllStudentByIdByProc(Integer id){
+        return studentMapper.getAllStudentByIdByProc(id);
+    }
 }

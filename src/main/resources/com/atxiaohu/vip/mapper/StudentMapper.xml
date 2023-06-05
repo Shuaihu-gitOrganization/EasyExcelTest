@@ -20,4 +20,17 @@
     <select id="findAll" resultType="com.atxiaohu.vip.pojo.Student">
         SELECT * from student;
     </select>
+    <select id="getAllStudentByProc" resultType="com.atxiaohu.vip.pojo.Student" statementType="CALLABLE">
+        {
+        call proc_getallstudent()
+        }
+    </select>
+    <select id="getAllStudentByIdByProc" resultType="com.atxiaohu.vip.pojo.Student" statementType="CALLABLE">
+        {
+        call proc_getallstudentbyid(
+            #{id,mode=IN,javaType=int}
+            )
+        }
+    </select>
+
 </mapper>
