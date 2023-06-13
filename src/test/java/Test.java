@@ -5,7 +5,9 @@ import com.atxiaohu.vip.pojo.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -55,4 +57,12 @@ public class Test {
         });*/
 
     }
+    @org.junit.jupiter.api.Test
+    public void testDate()throws Exception{
+        Date date = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        System.out.println(date);
+        System.out.println(simpleDateFormat.parse(simpleDateFormat.format(date)));
+    }
+
 }
